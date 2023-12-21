@@ -5,8 +5,8 @@
     <description></description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Dec 2023 14:12:13 +0800</pubDate>
-    <lastBuildDate>Thu, 21 Dec 2023 14:12:13 +0800</lastBuildDate>
+    <pubDate>Fri, 22 Dec 2023 00:18:28 +0800</pubDate>
+    <lastBuildDate>Fri, 22 Dec 2023 00:18:28 +0800</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -20,6 +20,22 @@
         
         
         <category>sharing</category>
+        
+      </item>
+    
+      <item>
+        <title>Google 搜索技巧</title>
+        <description>
+尽管当下 GPT 发展势不可挡，但有时候 Google 搜索还是很有必要的，掌握一点搜索技巧，提高搜索效率，时间能省一秒是一秒。
+</description>
+        <pubDate>Thu, 21 Dec 2023 00:00:00 +0800</pubDate>
+        <link>http://0.0.0.0:4000/2023/12/21/Google-%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2023/12/21/Google-%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</guid>
+        
+        <category>google</category>
+        
+        
+        <category>skill</category>
         
       </item>
     
