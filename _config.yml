@@ -1,0 +1,80 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+encoding: utf-8
+# Site settings
+title: Ultrasev 的博客
+brief-intro: AI、Tools & Life
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://ultrasev.github.io' # the base hostname & protocol for your site
+
+permalink: /:year/:month/:day/:title/
+
+# other links
+twitter_username: ultrasev_
+youtube_username: ultrasev
+email: cyaeyz@gmail.com
+weibo_username: 
+facebook_username:
+zhihu_username:
+linkedIn_username:
+dribbble_username:
+
+description_footer: 💡
+
+# comments
+# 三种评论插件，选一个就好了
+# disqus_shortname: #slipper
+# gitalk:
+#   enable: false
+#   clientID:
+#   clientSecret:
+#   repo:
+#   owner: 
+#   admin: 
+utteranc_es:
+  enable: true
+  repo: 'ultrasev/ultrasev.github.io'
+  issue-term: pathname
+  theme: github-light
+
+# 赞赏
+# reward:
+#   enable: true
+#   wechat: /assets/wechat.png
+  # alipay: /assets/images/reward/alipay.png
+
+# statistic analysis 统计代码
+# 百度统计 id，将统计代码替换为自己的百度统计id，即
+# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
+# xxxxx字符串
+baidu_tongji_id:
+google_analytics_id:
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# port
+# port: 1234
+
+# url
+category_dir: category/
+tag_dir: tag/
+
+# excerpt
+excerpt_separator: "\n\n\n\n"
+
+# paginate
+plugins: [jekyll-paginate]
+paginate: 10
+
+
+exclude: ["README.md", "LICENSE", ".post-template", ".gitignore", "start.bat"]
+
