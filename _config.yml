@@ -52,7 +52,7 @@ gitalk:
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 baidu_tongji_id: 80ef4ad13c36b61cc02574edb9a2938d
-google_analytics_id:
+google_analytics_id: G-9GSKN6TWPL
 
 # Build settings
 markdown: kramdown
