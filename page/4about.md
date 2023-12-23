@@ -6,7 +6,7 @@ icon: heart
 type: page
 ---
 
-我是 ultrasev，一个喜欢研究技术、热爱影视的人。本博客主要记录并分享我在学习过程中的一些笔记，主要内容有：
+我是 ultrasev，一个喜欢研究技术、热爱影视的人。本博客主要记录并分享我在学习过程中的一些笔记与思考，主要内容有：
 
 * `AI`
 * `编程`
@@ -14,9 +14,9 @@ type: page
 * `科学上网`
 
 以下是笔者维护的一些站点，有的运行已三年有余，内容每日更新：
-- [AI 资讯(ai.ultrasev.com)](https://ai.ultrasev.com)：采集微信公众号、网站、技术博客 RSS 后，过滤并提炼出的最新的 AI 动向、技术、资讯及工具等。过滤模型基于 GPT-3.5，主要过滤掉一些低质量、广告、标题党内容。
+- [AI 资讯(ai.ultrasev.com)](https://ai.ultrasev.com)：通过 RSS 采集微信公众号、资讯网站、技术博客后，过滤并提炼出的 AI 动向、热门技术及工具等相关文章。过滤模型基于 GPT-3.5，主要过滤掉一些低质量、广告、标题党内容。
 - [高分影视集结(film.ultrasev.com)](https://film.ultrasev.com)：分享最近的高分影视资源。
-- [短链接服务(dlj.one)](https://dlj.one)：基于 Cloudflare workers + R2 的短链接生成服务，链接永久有效（大佬手下留情，勿滥用），笔者在博客中重度使用。
+- [短链接服务(dlj.one)](https://dlj.one)：基于 Cloudflare workers + R2 的短链接生成服务，短链接永久有效（大佬手下留情，勿滥用），笔者在博客中高频使用。
 
 有任何问题或建议，欢迎在 Twitter 及 YouTube 上联系我。
 
