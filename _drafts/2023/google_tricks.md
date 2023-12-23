@@ -1,0 +1,104 @@
+---
+layout:     post
+title:      Google 搜索技巧
+date:       2023-12-21
+tags: [google]
+categories: 
+- skill
+---
+
+尽管当下 GPT 发展势不可挡，但有时候 Google 搜索还是很有必要的，掌握一点搜索技巧，提高搜索效率，时间能省一秒是一秒。 
+
+## 1. 精准搜索
+在多个搜索**词条两边添加双引号**，比如 "iPhone 小米"，这样搜索引擎不会打乱多个词条顺序或者拆分词条。 
+
+对比搜索结果，左图为添加双引号搜索结果，右图为未添加双引号搜索结果，可以看到，未添加双引号搜索结果中，`iPhone` 和 `小米` 两个词条被拆开分别搜索的，且有的结果中没有包含所有词条。
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202312/google_order_20231221_2350.png" width="789pt"> 
+    <figcaption style="text-align:center"> 精准搜索 </figcaption>
+</figure>
+
+## 2. 过滤结果 
+通过在搜索词条之后添加连字符 `-word` 来排除一些结果。
+
+适用场景：
+1. 语义上精确化搜索需求，有的词条对应多种结果，比如"苹果"，即对应苹果公司及其产品，也对应我们日常所食用的水果；
+2. 过滤搜索结果中包含的一些网址。
+
+比如某技术网站博客水平参差不齐，文章抄来抄去，在搜索过程中可以通过使用以下搜索方式: `Rabin Karp 算法 -csdn`，对比搜索结果，右图为过滤搜索结果，左图为未过滤搜索搜索结果。
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202312/google_no_csdn_20231222_0001.png" width="789pt"> 
+    <figcaption style="text-align:center"> 过滤多条结果可通过添加多个过滤词条实现，e.g., `-worda -wordb` </figcaption>
+</figure>
+
+过滤多条结果可通过添加多个过滤词条实现，e.g., `-worda -wordb`
+
+
+## 3. 站点搜索 `site:`
+
+在搜索词条之后添加 `site:stackoverflow.com` 指定只从 stackoverflow.com 上提取搜索结果，比如:
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202312/google_stackoverflow_20231221_2335.png" width="789pt"> 
+    <figcaption style="text-align:center"> 指定搜索站点 </figcaption>
+</figure>
+
+
+## 4. `filetype:` 指定搜索文件类型
+`filetype` 是 Google 开发的非常强大实用的一个搜索语法。不仅能搜索一般的文字页面，还能对某些二进制文档进行检索。支持搜索的格式包括但不限于 `.xls, .ppt, .doc, .rtf, .avi, .jpg`。 
+
+示例: 搜索 `Rabin-Carp` 算法相关 pdf 文件 `Rabin Carp filetype:pdf`
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202312/google_pdf_20231221_2337.png" width="789pt"> 
+    <figcaption style="text-align:center"> 指定搜索文件类型 </figcaption>
+</figure>
+
+
+
+## 5. inurl: 搜索关键词在 url 链接中
+`inurl` 语法返回的网页链接中包含第一个关键字，后面的关键字则出现在链接中或者网页文档中。
+示例: `inurl:梵高` 注: `inurl:keyword` 之间不能有空格 
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202312/google_vangogh_20231221_2338.png" width="789pt"> 
+    <figcaption style="text-align:center"> 搜索关键词在 url 链接中 </figcaption>
+</figure>
+
+类似的 `intitle` 语法指定搜索关键词包含在网页标题中。
+
+
+## 6. 使用星号通配符
+即正则搜索，星号作为一个占位符，会自动匹配所有可能情况。注: 星号匹配 0 个或者多个单词。 
+
+示例: `wake me up when * ends`
+
+## 7. 使用 OR 搜索多个词条
+
+比如一次性搜索`小米` 与 `iPhone`，关键词为 `小米 OR iPhone`，注意：
+1. 与直接搜索 `小米 iPhone` 的区别是，前者会同时搜索 `小米` 与 `iPhone` 两个词条，返回的结果里要么包含 `小米`，要么包含 `iPhone`； 而后者会搜索 `小米 iPhone` 这个词条，返回的结果里（多数情况下）会包含 `小米` 与 `iPhone` 两个词。
+2. 这里使用的是大写的 OR (或者使用符号 `|` )，使用小写的 or 会被搜索引擎认定为用户在征求两选一相关的意见，差异如下图所示。 
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202312/google_or_20231222_0006.png" width="789pt"> 
+    <figcaption style="text-align:center"> 使用 OR 搜索多个词条 </figcaption>
+</figure>
+
+
+## 8. 单位转换
+
+Google 搜索支持单位转换，比如 `1.5m in cm`，`1.5m` 即为要转换的数值，`m` 为要转换的单位，`cm` 为转换后的单位。
+
+再比如计算美元换算成人民币的数值，`3 USD to CNY`，`3` 为要转换的数值，`USD` 为要转换的单位，`CNY` 为转换后的单位。
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202312/google_exchange_20231222_0015.png" width="789pt"> 
+    <figcaption style="text-align:center"> 单位转换 </figcaption>
+</figure>
+
+## -1. 组合使用，融会贯通
+
+* 快速查找某人的社交档案 `周杰伦 (site:twitter.com | site:weibo.com | site:instagram.com)`
+* 对比搜索水果 Apple, Lemon 并排除 Apple.com 结果 `apple | lemon -apple.com`

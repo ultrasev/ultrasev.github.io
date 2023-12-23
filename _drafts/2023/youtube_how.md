@@ -1,19 +1,13 @@
 ---
-layout: post
-title: 如何运营 YouTube 频道
-date: 2023-12-21
-tags: youtube skill
-categories: skill
-author: ultrasev
+layout:     post
+title:      如何运营 YouTube 频道
+date:       2023-12-21
+tags: [YouTube, Skill]
+categories: 
+- skill
 ---
-* content
-{:toc}
-
 
 大半个中国，什么都在发生：火山在喷，河流在枯，百模大战，群魔乱舞。2023 年的最后一个月，笔者决定开始运营 YouTube 频道了，这里记录一些初学者的经验。 
-
-
-
 
 
 这篇文章的内容主要是从下面的 YouTube 视频中提炼出来的，视频是 YouTuber [七七营销笔记](https://www.youtube.com/@77MediaBook)讲述如何在两个月内订阅过万的经验。本文对视频内容作了一个总结，主要包括**关键词优化、内容建议、频道规划、常用工具**，最后还有一点笔者添加的一点创作者心态。
