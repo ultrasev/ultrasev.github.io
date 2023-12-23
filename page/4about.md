@@ -20,8 +20,9 @@ type: page
 
 有任何问题或建议，欢迎在 Twitter 及 YouTube 上联系我。
 
-- Twitter [@ultrasev_](https://twitter.com/ultrasev_)
-- YouTube [@ultrasev](https://www.youtube.com/channel/UCt0Op8mQvqwjp18B8vNPjzg)
+- <i style="color: #1da1f2; font-size: 1.2em;" class="fa-brands fa-twitter" aria-hidden="true"></i>  [@ultrasev_](https://twitter.com/ultrasev_)
+- <i style="color: #ff0000; font-size: 1.2em;" class="fa-brands fa-youtube" aria-hidden="true"></i> [@ultrasev](https://www.youtube.com/channel/UCt0Op8mQvqwjp18B8vNPjzg)
+<!-- - YouTube [@ultrasev](https://www.youtube.com/channel/UCt0Op8mQvqwjp18B8vNPjzg) -->
 
 <!-- 自 2023 年 07 月 14 日起，本站已运行 <span id="days"></span> 天，截至 {{ site.time | date: "%Y 年 %m 月 %d 日" }}，写了博文 {{ site.posts.size }} 篇，{% assign count = 0 %}{% for post in site.posts %}{% assign single_count = post.content | strip_html | strip_newlines | remove: ' ' | size %}{% assign count = count | plus: single_count %}{% endfor %}{% if count > 10000 %}{{ count | divided_by: 10000 }} 万 {{ count | modulo: 10000 }}{% else %}{{ count }}{% endif %} 字。  -->
 
