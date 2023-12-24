@@ -84,7 +84,7 @@ categories:
 
 # 4. 工欲善其事 必先利其器 
 1. ChatGPT: [https://chat.openai.com/](https://chat.openai.com)
-2. 支付 AI 生成图片软件: [Midjourney](https://www.midjourney.com/app/)
+2. 付费 AI 生成图片软件: [Midjourney](https://www.midjourney.com/app/)
 3. 免费 AI 生成图片软件: [Leonardi.ai](https://leonardo.ai)
 4. 免费图片编辑: [Canva](https://www.canva.com/)
 5. 免费剪辑软件: [剪映](https://www.capcut.cn/)
