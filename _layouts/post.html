@@ -2,8 +2,8 @@
 layout: default
 ---
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4559528382682085"
-     crossorigin="anonymous"></script>
-     
+    crossorigin="anonymous"></script>
+
 <div class="page clearfix" post>
     <div class="left">
         <h1>{{page.title}}</h1>
@@ -19,38 +19,42 @@ layout: default
             </div>
 
             <div class="label-card">
-                {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
+                {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }} {% endif %}
             </div>
 
             <div class="label-card">
-            {% include category.html %}
+                {% include category.html %}
             </div>
 
             <div class="label-card">
-            {% include tag.html %}
+                {% include tag.html %}
             </div>
 
             <div class="label-card">
-              <small style="color: #586069;">
-                本文 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，阅读全文约需 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }}  分钟 
-              </small>
+                <small style="color: #586069;">
+                    本文 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，阅读全文约需 {{ page.content |
+                    strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟
+                </small>
             </div>
 
         </div>
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
-        {{content}}
+            {{content}}
         </article>
         <!-- <small><strong>原文地址</strong> {{ site.url }}{{ page.url }}</small> -->
         <hr>
         <p style="font-family: 'Times New Roman', Times, serif;" align='right'>
-          <!-- Share to -->
-            <a> <img src="https://img.icons8.com/material/24/000000/share-3.png"/>    </a> 
-            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" title="Share on Twitter" rel="nofollow" target="_blank"> 
-            <img src="https://image.ddot.cc/202311/twitter.png" width="50px"> </a>
-            <a href="https://facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" title="Share on Facebook" target="_blank"> <img src="https://image.ddot.cc/202311/facebook.png" width="50px"> </a>
-            <a href="http://service.weibo.com/share/share.php?url={{site.url}}{{page.url}}&appkey=&title={{ page.title }}&pic=&ralateUid=&language=zh_cn" title="Share on weibo" rel="nofollow" target="_blank"> 
-                <img src="https://img.icons8.com/color/48/000000/weibo.png"/>
+            <!-- Share to -->
+            <a> <img src="https://img.icons8.com/material/24/000000/share-3.png" /> </a>
+            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}"
+                title="Share on Twitter" rel="nofollow" target="_blank">
+                <img src="https://image.ddot.cc/202311/twitter.png" width="50px"> </a>
+            <a href="https://facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" title="Share on Facebook"
+                target="_blank"> <img src="https://image.ddot.cc/202311/facebook.png" width="50px"> </a>
+            <a href="http://service.weibo.com/share/share.php?url={{site.url}}{{page.url}}&appkey=&title={{ page.title }}&pic=&ralateUid=&language=zh_cn"
+                title="Share on weibo" rel="nofollow" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/weibo.png" />
             </a>
         </p>
         <!-- <hr>
@@ -58,36 +62,44 @@ layout: default
 		<hr> -->
         {% assign hasSimilar = '' %}
         {% for post in site.related_posts %}
-            {% assign postHasSimilar = false %}
-            {% for tag in post.tags %}
-                {% for thisTag in page.tags %}
-                    {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
-                        {% if hasSimilar.size == 0 %}
-                        <h2 id="similar_posts">Similar Posts</h2>
-                        <ul>
+        {% assign postHasSimilar = false %}
+        {% for tag in post.tags %}
+        {% for thisTag in page.tags %}
+        {% if postHasSimilar == false and hasSimilar.size < 6 and post !=page and tag==thisTag %} {% if
+            hasSimilar.size==0 %} <h2 id="similar_posts">Similar Posts</h2>
+            <ul>
+                {% endif %}
+                <li class="relatedPost">
+                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+                        {% if post.series %}
+                        (Series: {{ post.series }})
                         {% endif %}
-                        <li class="relatedPost">
-                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
-                            {% if post.series %}
-                                (Series: {{ post.series }})
-                            {% endif %}
-                            </a>
-                        </li>
-                        {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
-                        {% assign postHasSimilar = true %}
-                    {% endif %}
+                    </a>
+                </li>
+                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                {% assign postHasSimilar = true %}
+                {% endif %}
                 {% endfor %}
-            {% endfor %}
-        {% endfor %}
-        {% if hasSimilar.size > 0 %}
+                {% endfor %}
+                {% endfor %}
+                {% if hasSimilar.size > 0 %}
             </ul>
-        {% endif %}
+            {% endif %}
 
-        {% include previousAndNext.html %}
-		
-        <h2 id="comments">Comments</h2>
-		{% include comments.html %}
-		
+            {% include previousAndNext.html %}
+
+            <!-- <h2 id="comments">Comments</h2> -->
+            <!-- {% include comments.html %} -->
+            
+            <!-- Disqus评论框 start -->
+            <div class="comment">
+                {% if site.disqus.shortname %}
+                {% include disqus.html %}
+                {% endif %}
+            </div>
+            <!-- Disqus评论框 end -->
+
+
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="right">
@@ -111,16 +123,16 @@ layout: default
     </div>
 </div>
 <script>
-/**
- * target _blank
- */
-(function() {
-    var aTags = document.querySelectorAll('article a:not([id])')
-    for (var i = 0; i < aTags.length; i++) {
-        aTags[i].setAttribute('target', '_blank')
-    }
-}());
+    /**
+     * target _blank
+     */
+    (function () {
+        var aTags = document.querySelectorAll('article a:not([id])')
+        for (var i = 0; i < aTags.length; i++) {
+            aTags[i].setAttribute('target', '_blank')
+        }
+    }());
 </script>
-<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="{{ " /js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
 <script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
-<script src="{{ "/js/code-copy.js "}}"></script>
+<script src="{{ " /js/code-copy.js "}}"></script>
