@@ -11,7 +11,9 @@ brief-intro: AI、Tools & Life
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://www.ultrasev.com' # the base hostname & protocol for your site
 
-permalink: /:year/:month/:day/:title/
+highlighter: rouge
+permalink: pretty
+# permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: ultrasev_
@@ -27,19 +29,25 @@ description_footer: 💡
 
 # comments
 # 三种评论插件，选一个就好了
-# disqus_shortname: #slipper
-gitalk:
-  enable: false
+comments :
+  provider : disqus # 使用 disqus 评论模块，读者翻墙才能看见
+  duoshuo :
+    short_name :  # 填写你的 disqus id
+  disqus :
+      short_name : ultrasev-com
+
+# gitalk:
+#   enable: false
 #   clientID:
 #   clientSecret:
 #   repo:
 #   owner: 
 #   admin: 
-utteranc_es:
-  enable: true
-  repo: 'ultrasev/ultrasev.github.io'
-  issue-term: pathname
-  theme: github-light
+# utteranc_es:
+#   enable: true
+#   repo: 'ultrasev/ultrasev.github.io'
+#   issue-term: pathname
+#   theme: github-light
 
 # 赞赏
 # reward:
@@ -78,3 +86,8 @@ paginate: 10
 
 exclude: ["README.md", "LICENSE", ".post-template", ".gitignore", "start.bat"]
 
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: ultrasev-com
