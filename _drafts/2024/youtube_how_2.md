@@ -44,4 +44,24 @@ vidHQ 社区曾经做过一个[调查](YouTube)，访问 YouTuber 新手一个�
 当然，关注数量并不意味着随便糊弄一下，你可以在每个视频中都有一个小目标，比如这个视频我要把灯光调整好，下个视频我要把音频调整好。如 MrBeast 在[一期视频](https://www.youtube.com/watch?v=QIWW4sh8r2U)里所说的: “make 1000 videos and improve something every time”。
 
 
+<style>
+  .video-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+</style>
+
+MrBeast 的 YouTube 起步之路：
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_Qq6sCvz4Z0?si=CfinwAvL7H24h_sj" title="YouTube 
+video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-
+picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+</div>
+
 
