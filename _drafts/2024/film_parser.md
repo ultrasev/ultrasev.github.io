@@ -16,10 +16,13 @@ categories:
 
 笔者最关注的一个影视信息网站是[电影后花园](http://www.dydhhy.com/tag/movie)，站长是一个很有勤奋的人，更新速度很快，几条每天都会更新很多电影条目，最新的电影信息也都是第一时间发布。条目里的电影信息也很全面，电影名、导演、演员、类型、地区、语言、上映时间、评分、简介等等，应有尽有。
 
-<!-- TODO: add an image to demonstrate -->
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202402/dydhhy-kido-demo_20240226_1620.png" width=789pt>
+    <figcaption style="text-align:center"> 电影后花园《小孩》条目 </figcaption>
+</figure>
 
-更重要的是，电影后花园还提供了 RSS 订阅，这样就可以通过 RSS 订阅的方式获取最新的电影信息
-<!-- TODO: add sub link -->
+更重要的是，电影后花园还提供了 [RSS 订阅](http://www.dydhhy.com/rsslatest.xml)，这样就可以通过 RSS 订阅的方式获取最新的电影信息。
+
 这样，笔者就通过订阅做了一个近期高分影视推荐机器人，每天通过Telegram/Feishu推送最新的高分电影。也结合 cloudflare workers 做了一个高分电影展示页面，每天自动更新。
 
 
@@ -37,10 +40,23 @@ categories:
 笔者尝试过使用 OpenAI 的 GPT-3.5/GPT-4, Google Gemini, Perplexity.AI API 以及阿里的 QWEN-1.5，这几个基本上是当前业界内对中文支持最强的大模型代表。 GPT、Gemini、QWEN 都能很好的完成任务，但 perpleixty.ai 的模型在中文任务上欠佳，偶尔会生成一些奇怪的结果。综合下来，还是 GPT 效果最好。
 
 
-难道 Google 最近开源了新模型 Gemma，在一系列基准测试中再次屠榜，
-https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3e02e8e0a83342b8b939ddb7bcafa5ac~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1080&h=429&s=47819&e=jpg&b=fdfcfc
+难道 Google 最近开源了新模型 [Gemma](https://blog.google/technology/developers/gemma-open-models/)，其中 Gemma-7B 在 7B 及以下开源 LLM 中排行第三 [HuggingFace Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)：
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202402/gemma-7b-llm-leaderboard_20240226_1633.png" width=789pt>
+    <figcaption style="text-align:center"> 7B及以下参数开源 LLM 排行榜 </figcaption>
+</figure>
+
+
 
 而且已经加入到 HuggingChat 可用模型套餐中，跟 Mixtral-7X8B、Llama-2-70B-chat 等模型一起，成立了开源模型的“七雄会”。这里就来对比一下这七个模型在电影信息提取任务上的表现。
+
+<figure style="text-align: center;">
+    <img src="https://image.ddot.cc/202402/gemma-7b-llm-leaderboard_20240226_1633.png" width=789pt>
+    <figcaption style="text-align:center"> HuggingChat 支持的模型 </figcaption>
+</figure>
+
+# 实验
 
 测试主要考虑以下几点：
 1. 能否对齐用户的指令，具体的，我们将以 json 格式返回结果， 返回的信息包含电影名、导演、演员、类型、地区、语言、上映时间、评分、简介等字段。
