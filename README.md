@@ -1,5 +1,5 @@
 
-### Hi there 👋
+### Hi there
 
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=ultrasev&show_icons=true&theme=vue" alt="ultrasev's github stats" />
 
@@ -8,5 +8,4 @@
 - 💬 Welcomed to ask me about `LLM & GPT`. 😎
 
 
-<img src="https://github-profile-trophy.vercel.app/?username=ultrasev&theme=flat&column=7&margin-w=10" alt="logo" height="160" align="center" />
-
+Go visit my [blog](https://ultrasev.com) for more information.
