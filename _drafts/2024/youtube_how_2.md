@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     draft 
 title:      YouTube 新手营，质量还是数量？
 date:       2024-01-10
 tags: [YouTube, Skill]
