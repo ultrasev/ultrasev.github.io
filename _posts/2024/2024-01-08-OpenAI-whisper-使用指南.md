@@ -1,15 +1,15 @@
 ---
-layout: post
-title: OpenAI whisper 使用指南
+categories:
+- llm
 date: 2024-01-08
-tags: openai whisper
-categories: llm
-author: ultrasev
+layout: post
+tags:
+- openai
+- whisper
+title: OpenAI whisper 使用指南
 ---
 * content
 {:toc}
-
-
 当我们聊 whisper 时，我们可能在聊两个概念，一是 whisper 开源模型，二是 whisper 付费语音转写服务。这两个概念都是 OpenAI 的产品，前者是开源的，用户可以自己的机器上部署应用，后者是商业化的，可以通过 OpenAI 的 API 来使用，价格是 0.006 美元/每分钟 。
 
 

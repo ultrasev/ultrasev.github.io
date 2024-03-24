@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     draft 
 title:      一文入门TypeScript
 date:       2024-03-21
 tags: [typescript, ts]

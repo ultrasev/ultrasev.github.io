@@ -1,16 +1,15 @@
 ---
-layout: post
-title: 电影信息提取哪家强——HuggingChat 7 个模型对比
+categories:
+- llm
 date: 2024-03-08
-tags: llm huggingchat
-categories: llm
-author: ultrasev
+layout: post
+tags:
+- llm
+- huggingchat
+title: 电影信息提取哪家强——HuggingChat 7 个模型对比
 ---
 * content
 {:toc}
-
-
-
 作为一个电影爱好者，为了追踪最新的影视作品信息，笔者经常“流窜”于各大影视导航网站，比如：
 
 
