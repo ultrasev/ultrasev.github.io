@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      电影信息提取哪家强——HuggingChat 7 个模型对比
-date:       2024-01-08
+date:       2024-03-08
 tags: [llm, huggingchat]
 categories:
 - llm
