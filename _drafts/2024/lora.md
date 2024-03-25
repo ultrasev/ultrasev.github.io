@@ -8,6 +8,8 @@ categories:
 ---
 
 [LoRA](https://arxiv.org/abs/2106.09685)
+idea behind:
+
 对比全参数微调，LoRA 做了两件不同的事情：
 1. 跟踪权重的变化而不是直接更新权重。
 2. 将权重变化的大矩阵分解为包含“可训练参数”的较小矩阵。
@@ -31,6 +33,7 @@ $$ 2 \cdot r \times \sqrt{d} $$
 | 8,192| 19.583%| 14.370%| 6.193% | 3.862% |
 | 16,384| 39.165%| 28.739%| 12.385%| 7.723% |
 
+好处是**极大地减少存储与内存空间**。比如 GPT-3 175B 模型，全参数微调需要 1.2TB 的 VRAM，而 LoRA 只需要 350GB（r=1024）。
 
 
 可能的问题：
@@ -43,6 +46,11 @@ $$ 2 \cdot r \times \sqrt{d} $$
 
 
 https://www.entrypointai.com/blog/lora-fine-tuning/
+
+# Formally
+假设 $W_0 \in \mathbb{R}^{d \times d}$ 是模型的参数矩阵，训练时 $W_0$ 会被冻结，而权重的更新 $\delta W=U \cdot V^T$ 会被低秩分解为 $U \in \mathbb{R}^{d \times r}$ 和 $V \in \mathbb{R}^{d \times r}$。这样，一次前向传播可表示为： $h = W_0 \cdot x + U \cdot V^T \cdot x$。
+
+在初始化是，$V$ 通过 Gaussian 初始化，而 $U$ 通过 $U = 0$。
 
 # 参考
 - [1] [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
